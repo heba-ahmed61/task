@@ -1,0 +1,111 @@
+.subscribe-title  {
+
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(197,190,190,.5);
+}
+.tweets-title{
+    color: white;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(197,190,190,1);
+
+    
+
+
+
+}
+
+.subscribe-icon , .tweets-icon{
+    margin-right: 10px;
+    
+}
+.subscribe-pragraph{
+    margin-left: 15px;
+    font-size: 14px;
+}
+.subscribe-form{
+    margin-left: 15px;
+}
+.email-input {
+
+    position: relative;
+    align-items: center;
+    
+}
+.email-input input{
+
+    padding: 10px 20px;
+    background-color: #212224;
+    border:1px solid rgba(197,190,190,.5);
+    outline:none;
+    width:90%;
+    
+}
+.email-input input::placeholder{
+
+    color: white;
+}
+.email-input span i {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    margin-right: 5px;
+}
+.subscribe-button button{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    background-color: #4F52D3;
+    border: 1px solid #4F52D3;
+    outline: none;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.subscribe-content , .tweets-content{
+
+    width: 48%;
+}
+.subscribe-content{
+    margin-right: 15px;
+}
+.tweets {
+    margin: 20px 15px;
+}
+.tweets span{
+    color: white;
+    background-color: black;
+    padding: 3px 15px;
+    font-weight: bold;
+}
+.tweet , .tweet-time{
+    margin-left:15px;
+    margin-bottom: 38px;
+}
+@media only screen and (min-width:768px) and (max-width:991.9px){
+
+    .tweet-time{
+        margin-bottom: 25px;
+    }
+    .tweets-title{
+        padding: 6px 0;
+    }
+
+
+}
+@media only screen and (max-width:767.9px){
+
+    .subscribe-content , .tweets-content{
+
+        width: 95%;
+    }
+    .subscribe-content{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+}

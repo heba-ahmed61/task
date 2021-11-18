@@ -1,0 +1,60 @@
+.start-searching {
+
+    border : 1px solid rgba(197, 190, 190, 1);
+    padding-bottom: 77px;
+}
+.start-searching-title{
+
+    padding: 10px;
+    border-bottom: 1px solid rgba(197, 190, 190, 1);
+
+
+}
+.start-searching-title span{
+
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+.search-icon{
+
+    margin-right: 40px;
+}
+.jobs-search , .location-search , .category-search{
+
+    padding: 10px 20px;
+}
+.jobs-search input , .location-search input , .category-search select{
+
+width:90%;
+padding:  8px 13px ;
+border:1px solid rgba(197, 190, 190, 1);
+font-size: 14px;
+outline: none;
+}
+.toggles{
+
+    padding : 0 10px;
+    margin: 30px 0 55px 10px;
+    width: 98%;
+}
+.jobs-search h6 , .location-search h6 , .category-search h6{
+
+    font-size: 14px;
+    }
+.toggles .MuiSvgIcon-root{
+
+    transform: rotate(-90deg) !important;
+}
+.startSearch-button button{
+
+    color: white;
+    background-color: black;
+    width: 95%;
+    border:  1px solid black;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.startSearch-button{
+    padding: 0 10px;
+}

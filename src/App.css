@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+*{
+    padding : 0;
+    margin:0;
+    box-sizing:border-box;
+    
+}
+.search-inputs {
+
+    display: flex; 
+    
+
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-job-input , .search-location-input , .search-category-input{
+    margin-right: 23px;
+    
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-job-input input , .search-location-input input , .search-category-input select{
+
+    border:1px solid gray;
+    outline: none;
+    padding: 5px 20px 5px 5px ;
+    font-size: 12px;
+}
+.search-category-input select{
+    padding-right: 60px;
+}
+.search-button button{
+
+    color: white;
+    background-color: black;
+    border : 1px solid black;
+    outline: none;
+    text-align: center;
+    padding: 5px 50px;
+    margin-top: 20px;
+
+}
+.makeStyles-root-1{
+
+    margin-top: -40px !important;
+}
+.jobs-tabs{
+
+    margin-top: 70px;
+}
+.load-button button{
+
+    color: black;
+    background-color: #F1F2F4;
+    text-align: center;
+    width: 90%;
+    padding:10px 0;
+    margin: 0 0 10px 0;
+    outline: none;
+    border:#F1F2F4;
+    font-weight: bold;
+}
+.col-content {
+
+    display: flex;
+    border-right: 1px solid rgba(197,190,190,1);
+    
+}
+.col-details{
+    margin-left: 15px;
+
+}
+.col-icon{
+    margin-top:10px;
+    font-size: 25px;
+    color:#4F52D3;
+}
+.col-details p{
+    color:grey; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.job-conatiner{
+
+    border: .5px solid #ccc;
+        
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+
+.job-wrap-row {
+
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job-wrap-row  .job-item{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: calc(100% / 3);
+    border: .5px solid #ccc;
+
+}
+
+
+
+.job-wrap-row  .job-item .job-icon{
+
+    flex-shrink: 0;
+    margin-right: 1rem;
+    font-size: 28px;
+    color:#4F52D3;
+    
+}
+.job-wrap-row  .job-item .job-content h1{
+
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.job-wrap-row  .job-item .job-content p{
+
+    font-size: 16px;
+    margin-bottom: 0;
+    color: grey;
+
+}
+.candidates-slider{
+    background-color: #4F52D3;
+    text-align: center;
+    color: white;
+    padding: 30px 0 180px 0;
+}
+.explore-all button{
+
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px;
+    border : 1px solid black;
+}
+.explore-all button:hover{
+
+    color: black;
+    background-color: white;
+    transition:  all .5s ease;
+}
+.jobsSilder{
+
+    margin-top: -43px;
+}
+.starting-search {
+
+    margin-top: -40px;
+}
+.pragraph{
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width:1199.9px){
+    .starting-search {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:991.9px){
+
+    .jobsSilder{
+
+        margin-top: 20px;
+    }
+    
+
+}
+@media only screen and (max-width:767.98px){
+
+    .search-inputs{
+        flex-direction: column;
+        
+    }
+    .search-job-input , .search-location-input , .search-category-input{
+        margin-right: 0;
+        margin-bottom: 5px;
+        
+        
+        
+    }
+    .search-job-input input , .search-location-input input , .search-category-input select{
+        
+        width: 100%;
+        
+    }
+    .search-job-input h6 , .search-location-input h6  , .search-category-input h6{
+        margin-top: 10px;
+        font-size: 13px;
+        
+        
+    }
+
+
+    .job-wrap-row  .job-item{
+
+        flex: 50%;
+    }
+    
+
+}
+@media only screen and (min-width:768px) and (max-width:1199.9px){
+
+    .search-button button{
+
+        color: white;
+        background-color: black;
+        border : 1px solid black;
+        outline: none;
+        text-align: center;
+        padding: 5px 40px;
+        margin-top: 20px;
+    
+    }
+    .search-job-input , .search-location-input , .search-category-input{
+        margin-right: 10px;
+        
+        
+    }
+}
+
+@media  (max-width:575.98px) {
+    
+    .job-wrap-row  .job-item{
+
+        flex: 100%;
+        justify-content: start;
+    }
 }
